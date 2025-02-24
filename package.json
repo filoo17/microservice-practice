@@ -1,0 +1,19 @@
+{
+  "name": "microservizi-tpsi",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "start:gateway": "node gateway/server.js",
+  "start:user": "node userService/server.js",
+  "start:message": "node messageService/server.js",
+  "start:all": "node gateway/server.js & node userService/server.js & node messageService/server.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}
